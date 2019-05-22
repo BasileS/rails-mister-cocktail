@@ -7,6 +7,9 @@
       <h2><%=link_to cocktail.name, cocktail_path(cocktail) %></h2>
     <% end %>
   </div>
-
+  <div>
   <%= link_to 'Add a cocktail', new_cocktail_path %>
+  </div>
+  <%= cl_image_tag("ntzdwczz6rirrocni6zf",
+      width: 400, height: 300, crop: :fill)
 </div>
